@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+  
+    <div th:fragment="header">
+  
+   <div class="loader-overlay">
+        <div class="loader">
+            <div class="loader-icon">
+                <span class="icon icon-arrows-glide"></span>
+            </div>
+            <h3 class="loader-text">Loading</h3>
+        </div>
+    </div>
+
+  
+    <div class="navbar navbar-inverse navbar-fixed-top" id="navbar-main">
+        <div class="navbar-inner clearfix">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                 
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav nav-left">
+                        <li class="active">
+                            <a href="#home">
+                                <span class="main-link" th:text="#{home.home}"></span>
+                                <span class="jewel"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <span class="main-link" th:text="#{home.about}"></span>
+                                <span class="jewel"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#career">
+                                <span class="main-link" th:text="#{home.career}"></span>
+                                <span class="jewel"></span>
+                            </a>
+                        </li>
+                       
+                        <li>
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="main-link" th:text="#{home.language}"></span>
+                                <span class="jewel"></span>
+                                <span class="icon hidden-xs"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                                <span class="icon icon-arrows-down visible-xs"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                             <!--    <li>
+                                    <a href="#blog"><span th:text="#{languageSelection}"></span></a>
+                                </li>-->
+                                <li>
+                                    <a class="external-link" href="?lang=en"><span th:text="#{home.english}"></span></a>
+                                </li>
+                                <li>
+                                    <a class="external-link" href="?lang=ru"><span th:text="#{home.russian}"></span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#contact-details">
+                                <span class="main-link" th:text="#{home.contact}"></span>
+                                <span class="jewel"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+   </div>
+   
+</body>
+</html>

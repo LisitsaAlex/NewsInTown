@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+   <div th:fragment="main" class="section section-hero" id="home" style="background-image: url('img/BIS-12.jpg')">
+        <div class="overlay"></div>
+        <div class="section-inner">
+            <div class="table-container-outer container">
+                <div class="table-container-inner">
+                    <div data-0="transform[swing]:translateY(0px);opacity[swing]:1" data-250="transform[swing]:translateY(-50px);opacity[swing]:0">
+                        
+                    </div>
+                    <h1 class="hero-header" data-150="transform[swing]:translateX(0px);opacity[swing]:1" data-550="transform[swing]:translateX(-25px);opacity[swing]:0"><span th:text="#{home.name}"></span> <strong class="main-color"><span th:text="#{home.surname}"></span></strong></h1>
+                    <h2 class="hero-subheader" data-200="transform[swing]:translateX(0px);opacity[swing]:1" data-500="transform[swing]:translateX(25px);opacity[swing]:0"><span th:text="#{home.personal}"></span> <strong class="main-color"><span th:text="#{home.portfolio}"></span></strong></h2>
+                    <div data-250="transform[swing]:translateY(0px);opacity[swing]:1" data-550="transform[swing]:translateY(-15px);opacity[swing]:0">
+                        <div class="divider">//</div>
+                    </div>
+                    <div data-350="transform[swing]:translateY(0px);opacity[swing]:1" data-650="transform[swing]:translateY(-15px);opacity[swing]:0">
+                        <p class="lead"><span th:text="#{home.aboutMe}"></span></p>
+                    </div>
+                    <ul class="list-inline icons-list-square" data-400="transform[swing]:translateY(0px);opacity[swing]:1" data-750="transform[swing]:translateY(-15px);opacity[swing]:0">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100027907892007" class="icon-circle-container" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li><li>
+                            <a href="https://github.com/LisitsaAlex" class="icon-circle-container" title="GitHub">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scroll-icon visible-lg" data-600="opacity[swing]:1" data-850="opacity[swing]:0">
+                <span class="icon icon-basic-magic-mouse"></span>
+            </div>
+        </div>
+    </div>
+  
+  </body>
+  </html>
+  

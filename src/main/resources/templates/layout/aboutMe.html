@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+  <div th:fragment="aboutMe" class="section section-standard section-white" id="about">
+        <div class="section-inner">
+            <div class="container">
+                <div class="section-header" data-100p-top="transform[swing]:translateY(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateY(0);opacity[swing]:1">
+                    <h3><span th:text="#{about.about}"></span> <span class="main-color" th:text="#{about.me}"></span></h3>
+                    <div class="divider">//</div>
+                </div>
+                 <div class="special-text text-center">
+                    <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                        <p><span th:text="#{about.iAm}"></span> <strong><span th:text="#{about.java}"></span> </strong><span th:text="#{about.from}"></span><span class="highlight" th:text="#{about.webApp}"></span> <span th:text="#{about.and}"></span> <span class="highlight" th:text="#{about.webSite}"></span><span th:text="#{about.founded}"></span> <span class="highlight" th:text="#{about.Spring}"></span></p>
+                    </div>
+     
+                    
+                    <div data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+
+                        <p><span class="highlight" th:text="#{about.professionalSkills}"></span></p>
+                        <p> <strong><span th:text="#{about.languages}"></span></strong> <span th:text="#{about.languagesList}"></span></p>
+                        <p> <strong><span th:text="#{about.frameworks}"></span></strong> <span th:text="#{about.frameworksList}"></span></p>
+                        <p> <strong><span th:text="#{about.services}"></span></strong> <span th:text="#{about.servicesList}"></span></p>
+                        <p> <strong><span th:text="#{about.servers}"></span></strong> <span th:text="#{about.serversList}"></span></p>
+                        <p> <strong><span th:text="#{about.more}"></span></strong> <span th:text="#{about.others}"></span> <span th:text="#{about.language}"></span></p>
+                    
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="profile-content">
+                        <div class="profile-image">
+                            <div class="profile-image-inner" data-100p-top="opacity[swing]:0" data-75p-top="opacity[swing]:1">
+                                <div class="overlay"></div>
+                                <div class="profile-border-outer">
+                                    <div class="profile-border-inner"></div>
+                                </div>
+                                <img class="img-responsive" src="img/photo-lisitsa24.jpg" alt="Profile image">
+                            </div>
+                            <a href="#" class="btn btn-transparent btn-lg btn-block margin-b-sections-text visible-xs" title="Download Resume">
+                                <span class="icon icon-basic-download"></span> 
+                            </a>
+                            
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="special-text text-center no-margin">
+                    <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                        <p><span th:text="#{about.work}"></span><a href="#" title="Send me an email"> <strong><span th:text="#{about.email}"></span></strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  </html>
+  

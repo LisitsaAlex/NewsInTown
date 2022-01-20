@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+<div th:fragment="sendMessage" class="section section-standard section-white" id="send-me-a-message">
+        <div class="section-inner">
+            <div class="container">
+                <div class="section-header" data-100p-top="transform[swing]:translateY(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateY(0);opacity[swing]:1">
+                    <h3><span th:text="#{message.send}"></span> <span class="main-color" th:text="#{message.message}"></span></h3>
+                    <div class="divider">//</div>
+                </div>
+                <div class="special-text text-center">
+                    <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                        <p><span th:text="#{message.ifYou}"></span> <span class="highlight" th:text="#{message.contact}"></span> <span th:text="#{message.withMe}"></span> <span class="highlight" th:text="#{message.message}"></span> <span th:text="#{message.to}"></span> <a href="#"><span th:text="#{message.email}"></span></a> <span th:text="#{message.or}"></span> <strong><span th:text="#{message.form}"></span></strong> <span th:text="#{message.below}"></span></p>
+                    </div>
+                </div>
+                <form class="contact-form form" method="POST" action="#" th:action="@{/}" th:object="${personMessage}">
+                    <div class="contact-form-content">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                    <div class="form-group has-feedback">
+                                        <input type="text"  class="form-control" th:field="*{name}" name="personName" th:placeholder ="#{message.enterName}">
+                                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="email" th:field="*{email}" class="form-control" name="personEmail" th:placeholder="#{message.enterEmail}">
+                                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" th:field="*{phone}"class="form-control" name="personPhone" th:placeholder="#{message.enterPhone}">
+                                        <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" cols="40" name="personMessage" th:field="*{message}"th:placeholder="#{message.enterMessage}"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-6">
+                                <div data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                    <button type="submit" class="btn btn-transparent btn-lg btn-block">
+                                        <span class="icon icon-basic-mail"></span> <span th:text="#{message.sendButton}"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

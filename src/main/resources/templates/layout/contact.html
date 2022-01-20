@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+
+ <div th:fragment="contact" class="section section-standard section-white" id="contact-details">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="margin-b-sections-text" data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <h3 class="margin-t-0"><span th:text="#{contact.myName}"></span></h3>
+                            <p><span th:text="#{contact.title}"></span><br>
+                      
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="margin-b-sections-text" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <h3 class="margin-t-0"><span th:text="#{contact.details}"></span></h3>
+                            <p><span th:text="#{contact.adress}"></span><br>
+                            <strong><span th:text="#{contact.telephone}"></span></strong></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="margin-b-sections-text" data-100p-top="transform[swing]:translateX(50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <h3 class="margin-t-0"><span th:text="#{contact.social}"></span></h3>
+                            <p>
+                                <a href="https://www.facebook.com/profile.php?id=100027907892007" title="Facebook"><strong>Facebook</strong></a><br>
+                                <a href="https://github.com/LisitsaAlex" title="GitHub"><strong>GitHub</strong></a><br>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

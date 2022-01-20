@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<body>
+  <div th:fragment="career" class="section section-standard" id="career">
+        <div class="section-inner">
+            <div class="container">
+                <div class="section-header" data-100p-top="transform[swing]:translateY(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateY(0);opacity[swing]:1">
+                    <h3><span th:text="#{career.career}"></span></h3>
+                    <div class="divider">//</div>
+                </div>
+                <div class="special-text text-center">
+                    <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                        <p><span th:text="#{career.theseAreMy}"></span> <span class="highlight" th:text="#{career.careerMy}"></span> <span th:text="#{career.and}"></span> <span class="highlight" th:text="#{career.education}"></span><span th:text="#{career.paths}"></span> <span th:text="#{career.youCan}"></span><span class="highlight" th:text="#{career.points}"></span></p>
+                    </div>
+                </div>
+                <h3 class="timeline-header"><span th:text="#{career.education}"></span></h3>
+                <div class="timeline">
+                    <div class="timeline-block">
+                        <div class="timeline-img hexagon">
+                            <span class="plus" data-100p-top="transform[swing]:scale(0.2);opacity[swing]:0" data-75p-top="transform[swing]:scale(1);opacity[swing]:1">+</span>
+                        </div>
+                        <div class="timeline-content" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <span class="timeline-date" data-100p-top="transform[swing]:translateX(-50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                <span th:text="#{career.yearCollege}"></span>
+                            </span>
+                            <div class="timeline-description clearfix">
+                                <h3><span th:text="#{career.collegeHead}"></span></h3>
+                                <p class="timeline-toolbar"><i class="fa fa-graduation-cap"></i> <span th:text="#{career.speciality}"></span></p>
+                                <img class="img-responsive" src="img/logos/Big_Gerb_Dnepr.jpg" alt="Company">
+                                <p><span th:text="#{career.specialityTitle}"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-block">
+                        <div class="timeline-img hexagon">
+                            <span class="plus" data-100p-top="transform[swing]:scale(0.2);opacity[swing]:0" data-75p-top="transform[swing]:scale(1);opacity[swing]:1">+</span>
+                        </div>
+                        <div class="timeline-content" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <span class="timeline-date" data-100p-top="transform[swing]:translateX(-50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                <span th:text="#{career.yearUniver}"></span>
+                            </span>
+                            <div class="timeline-description clearfix">
+                                <h3><span th:text="#{career.univerHead}"></span></h3>
+                                <p class="timeline-toolbar"><i class="fa fa-graduation-cap"></i> <span th:text="#{career.specialityUniver}"></span></p>
+                                <img class="img-responsive" src="img/logos/DIIT.jpg" alt="Company">
+                                <p><span th:text="#{career.specialityUniverTitle}"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="timeline-header"><span th:text="#{career.career}"></span></h3>
+                <div class="timeline">
+                    <div class="timeline-block">
+                        <div class="timeline-img hexagon">
+                            <span class="plus" data-100p-top="transform[swing]:scale(0.2);opacity[swing]:0" data-75p-top="transform[swing]:scale(1);opacity[swing]:1">+</span>
+                        </div>
+                        <div class="timeline-content" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                            <span class="timeline-date" data-100p-top="transform[swing]:translateX(-50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                                <span th:text="#{career.careerYear}"></span>
+                            </span>
+                            <div class="timeline-description clearfix">
+                                <h3><span th:text="#{career.careerCompany}"></span></h3>
+                                <p class="timeline-toolbar"><i class="fa fa-user"></i> <span th:text="#{career.careerWork}"></span></p>
+                                <img class="img-responsive" src="img/logos/Big_Gerb_Dnepr.jpg" alt="Company">
+                                <p><span th:text="#{career.careerTitle}"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  </html>
+  
