@@ -10,6 +10,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
+import com.example.demo.DBClass.Message;
+import com.example.demo.DBClass.PersonMessage;
+
 
 
 @Configuration
@@ -33,6 +36,20 @@ public class SeetingClass implements WebMvcConfigurer {
 		localeChangeInteceptor.setParamName("lang");
 		return localeChangeInteceptor;
 	}
+	
+	
+	@Bean
+	public Message message()
+	{
+		return new Message();
+	}
+	
+	@Bean 
+	public PersonMessage personMessage()
+	{
+		return new PersonMessage();
+	}
+	
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry)

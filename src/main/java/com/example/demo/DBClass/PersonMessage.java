@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.DBClass;
 
 public class PersonMessage {
 	
@@ -37,6 +37,8 @@ public class PersonMessage {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
+	
 	
 
 }

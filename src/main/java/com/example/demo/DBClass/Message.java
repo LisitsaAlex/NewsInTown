@@ -61,4 +61,13 @@ public class Message {
 		this.phone = phone;
 	}
 	
+	public void setParams(String name,String email,String phone,String message)
+	{
+		this.name=name;
+		this.email=email;
+		this.phone=phone;
+		this.message=message;
+	}
+
+	
 }

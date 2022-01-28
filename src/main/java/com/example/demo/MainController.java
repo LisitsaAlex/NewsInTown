@@ -22,11 +22,16 @@ public class MainController {
 	
 	@Autowired
 	private UserRepository userRepository;
+	@Autowired
+	private Message message;
+	@Autowired
+	private PersonMessage personMessage;
+	
 	
 	@GetMapping("/")
 	public String my(Model model)
 	{
-		model.addAttribute("personMessage", new PersonMessage());
+		model.addAttribute("personMessage", personMessage);
 		return "index";
 	}
 	
@@ -35,18 +40,11 @@ public class MainController {
 	
 	public String handlePostRequest(@ModelAttribute PersonMessage personMessage, Model model)
 	{
-		System.out.println("person name: "+personMessage.getName());
-		System.out.println("person email: "+personMessage.getEmail());
-		System.out.println("person phone: "+personMessage.getPhone());
-		System.out.println("person massege: "+personMessage.getMessage());
-		Message message = new Message();
-		message.setName(personMessage.getName());
-		message.setEmail(personMessage.getEmail());
-		message.setPhone(personMessage.getPhone());
-		message.setMessage(personMessage.getMessage());
+		
+		message.setParams(personMessage.getName(), personMessage.getEmail(), personMessage.getPhone(), personMessage.getMessage());
 		
 		userRepository.save(message);
-		
+	
 		return "redirect:messageSend";
 	}
 
@@ -68,6 +66,8 @@ public class MainController {
 		return "errorPage";
 		
 	}
+
+
 
 	
 	
