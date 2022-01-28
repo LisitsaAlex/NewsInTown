@@ -1,5 +1,6 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">
 <html xmlns:th="http://www.thymeleaf.org" >
+
 
 <body>
 <div th:fragment="sendMessage" class="section section-standard section-white" id="send-me-a-message">
@@ -20,15 +21,16 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
                                     <div class="form-group has-feedback">
-                                        <input type="text"  class="form-control" th:field="*{name}" name="personName" th:placeholder ="#{message.enterName}">
+                                        <input type="text" th:field="*{name}" class="form-control" name="name" th:placeholder ="#{message.enterName}" required>
                                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                                     </div>
+                                    
                                     <div class="form-group has-feedback">
-                                        <input type="email" th:field="*{email}" class="form-control" name="personEmail" th:placeholder="#{message.enterEmail}">
+                                        <input type="email" th:field="*{email}" class="form-control" name="email" th:placeholder="#{message.enterEmail}" required >
                                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                                     </div>
                                     <div class="form-group has-feedback">
-                                        <input type="text" th:field="*{phone}"class="form-control" name="personPhone" th:placeholder="#{message.enterPhone}">
+                                        <input type="tel" th:field="*{phone}"class="form-control" name="phone" th:placeholder="#{message.enterPhone}" required maxlength=12 minlength=10>
                                         <span class="glyphicon glyphicon-phone form-control-feedback"></span>
                                     </div>
                                 </div>
@@ -36,7 +38,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="3" cols="40" name="personMessage" th:field="*{message}"th:placeholder="#{message.enterMessage}"></textarea>
+                                        <textarea class="form-control" rows="3" cols="40" th:field="*{message}" name="message" th:placeholder="#{message.enterMessage}" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -44,16 +46,20 @@
                         <div class="row">
                             <div class="col-md-6 col-md-offset-6">
                                 <div data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
-                                    <button type="submit" class="btn btn-transparent btn-lg btn-block">
+                                    <button type="submit" class="btn btn-transparent btn-lg btn-block" name="send">
                                         <span class="icon icon-basic-mail"></span> <span th:text="#{message.sendButton}"></span>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                    
+                      
                     </div>
                 </form>
-            </div>
         </div>
-    </div>
+        </div>
+        </div>
+     
+     
 </body>
 </html>
