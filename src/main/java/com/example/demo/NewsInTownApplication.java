@@ -13,7 +13,11 @@ import org.springframework.context.annotation.Configuration;
 public class NewsInTownApplication {
 
 	public static void main(String[] args) {
+		
+	
 		SpringApplication.run(NewsInTownApplication.class, args);
+		
+		
 	}
 
 }

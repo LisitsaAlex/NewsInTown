@@ -22,8 +22,8 @@ public class MainController {
 	
 	@Autowired
 	private UserRepository userRepository;
-	@Autowired
-	private Message message;
+	//@Autowired
+	//private Message message;
 	@Autowired
 	private PersonMessage personMessage;
 	
@@ -40,10 +40,11 @@ public class MainController {
 	
 	public String handlePostRequest(@ModelAttribute PersonMessage personMessage, Model model)
 	{
-		
+		Message message = new Message();
 		message.setParams(personMessage.getName(), personMessage.getEmail(), personMessage.getPhone(), personMessage.getMessage());
 		
 		userRepository.save(message);
+
 	
 		return "redirect:messageSend";
 	}
